@@ -1,10 +1,10 @@
-# Kfz-Haftpflichtversicherungsschaeden-Modellierung
+# Kfz-Haftpflichtversicherungsschäden-Modellierung
 
-Autor: Michael Volk
+Autor: <a href="https://github.com/micvolk">Michael Volk</a>
 
 ## Überblick
 
-- Schadenwahrscheinlichkeit und Schadenaufwand bzgl. Kfz-Haftpflichtversicherungsschäden auf Basis eines Generalized Linear Model (GLM) und eines Extreme Gradient Boosting Model (XGBoost) prognostiziert
+- Schadenwahrscheinlichkeit und Schadenaufwand bzgl. Kfz-Haftpflichtversicherungsverträgen auf Basis eines Generalized Linear Model (GLM) und eines Extreme Gradient Boosting Model (XGBoost) prognostiziert
 - Öffentlich verfügbarer, französischer Kfz-Haftpflichtversicherungs-Datensatz ``freMTPL2`` diente als Datengrundlage für Training & Validierung der Modelle (~ 678 Tsd. Verträge, 9 Risikomerkmale)
 - Gute Prognose-Genauigkeit hinsichtlich Schadenwahrscheinlichkeit, mit leicht besseren Ergebnissen für XGBoost-Modell
 - Dagegen Prognose-Genauigkeit hinsichtlich Schadenaufwand pro Schadenfall schlechter als simple Vorhersage des Portfoliomittelwerts => Überanpassung der Modelle auf Basis der verrauschten Trainingsdaten (nur ~24 Tsd. Verträge weisen Schäden auf)
@@ -29,10 +29,10 @@ Autor: Michael Volk
 
 Alle beschriebenen Schritte werden in dem Jupyter-Notebook ``Kfz-Haftpflichtversicherungsschaeden-Modellierung.ipynb`` auf Basis von Python 3.9 durchgeführt. Das Notebook kann auch als reine HTML-Version mit oder ohne Python-Code-Darstellung aufgerufen werden:
 
-- [Kfz-Haftpflichtversicherungsschaeden-Modellierung mit Code](presentation/Kfz-Haftpflichtversicherungsschaeden-Modellierung_mitCode.html)
-- [Kfz-Haftpflichtversicherungsschaeden-Modellierung ohne Code](presentation/Kfz-Haftpflichtversicherungsschaeden-Modellierung_ohneCode.html)
+- [Kfz-Haftpflichtversicherungsschaeden-Modellierung mit Code](https://micvolk.github.io/Kfz-Haftpflichtversicherungsschaeden-Modellierung/presentation/Kfz-Haftpflichtversicherungsschaeden-Modellierung_mitCode.html)
+- [Kfz-Haftpflichtversicherungsschaeden-Modellierung ohne Code](https://micvolk.github.io/Kfz-Haftpflichtversicherungsschaeden-Modellierung/presentation/Kfz-Haftpflichtversicherungsschaeden-Modellierung_ohneCode.html)
 
-Ziel ist es Modelle bzgl. Schadenwahrscheinlichkeit und Schadenaufwand auf Basis eines öffentlich verfügbaren, französischen Kfz-Haftpflichtversicherungs-Datensatz abzuleiten und diese dann zu trainieren und zu validieren.
+Ziel ist es Modelle bzgl. Schadenwahrscheinlichkeit und Schadenaufwand auf Basis eines öffentlich verfügbaren, französischen Kfz-Haftpflichtversicherungs-Datensatzes abzuleiten und diese dann zu trainieren und zu validieren.
 
 Zunächst wird mit der Exploration der Daten mittels univariater und multivariater Analysen begonnen. Im Laufe der Datenexploration und Datenanalyse werden bereits Datenaufbereitungen vorgenommen, die für die Visualisierung und spätere Modellierung als Grundlage dienen. Schließlich erfolgt die Modellierung um Schadenwahrscheinlichkeit und Schadenaufwand für einen Vertrag mit gegebenen Risikomerkmalen prognostizieren zu können. Sowohl für die Modellierung der Schadenwahrscheinlichkeit als auch für den Schadenaufwand werden jeweils folgende 3 Modelle in unterschiedlichen Konfigurationen verwendet:
 - Dummy-Regressor: Trivial-Modell als Basisvergleichslinie
