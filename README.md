@@ -54,22 +54,22 @@ Datei freMTPL2freq.csv enthält die Vertragsdaten und Schadenanzahl bzgl. dem je
 Datei freMTPL2sev.csv enthält den Schadenaufwand bzgl. dem jeweiligem Versicherungsvertrag.
 
 Beschreibung der Spalten in Datei freMTPL2freq.csv:
-- IDpol: Vertragsnummer der Versicherung, zwecks Verknüpfung mit Vertragsnummer in freMTPL2sev.csv
-- ClaimNb: Anzahl an Schäden innerhalb des Versicherungszeitraums (=Spalte Exposure)
-- Exposure: Zeitraum in Jahreseinheiten in welcher der Vertrag versichert war
-- Area: Der Dichtewert der Stadtgemeinde, in der der Autofahrer lebt: von "A" für ländliche Gegend bis "F" für Stadtzentrum.
-- VehPower: Motorleistung (geordnete Werte)
-- VehAge: Alter des Fahrzeuges
-- DrivAge: Alter des Fahrers
-- BonusMalus: Bonus/Malus-Score, zwischen 50 und 350: <100 bedeutet Bonus, >100 bedeutet Malus in Frankreich.
-- VehBrand: Automarke (unbekannte Kategorien)
-- VehGas: Kraftstoff des Fahrzeugs (Diesel oder regulär)
-- Density: Die Einwohnerdichte (Anzahl der Einwohner pro Quadratkilometer) der Stadt, in der der Autofahrer wohnt
-- Region: Die Verwaltungsbezirke in Frankreich (basierend auf der Klassifikation 1970-2015).
+- ``IDpol``: Vertragsnummer der Versicherung, zwecks Verknüpfung mit Vertragsnummer in freMTPL2sev.csv
+- ``ClaimNb``: Anzahl an Schäden innerhalb des Versicherungszeitraums (=Spalte Exposure)
+- ``Exposure``: Zeitraum in Jahreseinheiten in welcher der Vertrag versichert war
+- ``Area``: Der Dichtewert der Stadtgemeinde, in der der Autofahrer lebt: von "A" für ländliche Gegend bis "F" für Stadtzentrum.
+- ``VehPower``: Motorleistung (geordnete Werte)
+- ``VehAge``: Alter des Fahrzeuges
+- ``DrivAge``: Alter des Fahrers
+- ``BonusMalus``: Bonus/Malus-Score, zwischen 50 und 350: <100 bedeutet Bonus, >100 bedeutet Malus in Frankreich.
+- ``VehBrand``: Automarke (unbekannte Kategorien)
+- ``VehGas``: Kraftstoff des Fahrzeugs (Diesel oder regulär)
+- ``Density``: Die Einwohnerdichte (Anzahl der Einwohner pro Quadratkilometer) der Stadt, in der der Autofahrer wohnt
+- ``Region``: Die Verwaltungsbezirke in Frankreich (basierend auf der Klassifikation 1970-2015).
 
 Beschreibung der Spalten in freMTPL2sev.csv:
-- IDpol: Vertragsnummer der Versicherung, zwecks Verknüpfung mit Vertragsnummer in freMTPL2freq.csv
-- ClaimAmount: Schadenaufwand in €
+- ``IDpol``: Vertragsnummer der Versicherung, zwecks Verknüpfung mit Vertragsnummer in freMTPL2freq.csv
+- ``ClaimAmount``: Schadenaufwand in €
 
 ## Verwendete Quellen
 
